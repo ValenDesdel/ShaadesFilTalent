@@ -1,0 +1,131 @@
+$color-2: #27C1C1;
+$color-6: #C6C6C6;
+$color-b: #393939;
+$transition: ease all 0.2s;
+.nav-bar-content-news {
+    box-sizing: border-box;
+    position: fixed;
+    bottom: auto;
+    top: 0;
+    z-index: 99999;
+    background-color: $color-b;
+    min-height: 50px;
+    max-height: 50px;
+    height: 50px;
+    padding: 12px 0;
+}
+.nav-bar-content-news .cont-logo-head {
+    padding-left: 0 !important;
+}
+
+
+.nav-bar-content-news .btn-back-header  img {
+  min-width: 28px !important;
+  max-width: 28px !important;
+  min-height: 20.12px !important;
+  max-height: 20.12px !important;
+  height: 20.12px !important;
+  width: 28px !important;
+    transform: rotate(180deg);
+    cursor: pointer;
+    color: $color-6;
+}
+.nav-bar-content-news .logo-head {
+  min-width: 94.42px !important;
+  max-width: 94.42px !important;
+  min-height: 25px !important;
+  max-height: 25px !important;
+  height: 25px !important;
+  width: 94.42px !important;
+    margin-left: -23%;
+}
+
+.user-name-content,
+.is-follow-content,
+.cont-logo-head,
+.btn-search-header,
+.btn-back-header-content {
+    display: none;
+}
+
+.user-name, .is-follow {
+    margin-bottom: 0;
+    font-size: 14pt;
+    
+}
+.user-name {
+    color: $color-6;
+}
+.is-follow{
+    color: $color-2;
+    margin-right: 5px;
+}
+
+.user-name-content.active,
+.is-follow-content.active,
+.cont-logo-head.active,
+.btn-search-header.active,
+.btn-back-header-content.active {
+    display: flex;
+}
+
+
+.search-icon {
+    display: inline-block;
+    cursor: pointer;
+  }
+.search-bar {
+  height: auto;
+  width: auto;
+  display: inline-block;
+  box-sizing: border-box;
+  
+  input {
+    font-family: 'Microsoft PhagsPa';
+    width: 300px;
+    box-sizing: border-box;
+    font-size: 18px;
+    border-top:none !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-bottom: 1px solid $color-6;
+    cursor: pointer;
+    background-color: $color-b;
+    transition: all 0.5s ease;
+    color: $color-2;
+    box-shadow: none;
+    
+    &::placeholder {
+      color: $color-6;
+    }
+    
+    &:invalid {
+      box-shadow: none;
+    }
+    
+    &:hover {
+    border-bottom: 1px solid $color-2;
+    box-shadow: none;
+    &::placeholder {
+        color: $color-2;
+      }
+    }
+    
+    &:focus, &:active, &:focus:active {
+    box-shadow: none;
+      
+      border-bottom: 1px solid $color-2;
+      outline: none;
+      cursor: auto;
+      background-color: $color-b;
+      color: $color-6;
+      
+      &::placeholder {
+        color: $color-2;
+      }
+      
+    }
+  }
+}
+
+

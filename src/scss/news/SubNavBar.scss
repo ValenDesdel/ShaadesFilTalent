@@ -1,0 +1,38 @@
+$color-2: #27C1C1;
+$color-07 : #818181;
+.sub-nav-bar-menu-content {
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 50px;
+  bottom: auto;
+  z-index: 999;
+  width: 100%;
+  margin-bottom: 25px;
+  min-height: 40px !important;
+  max-height: 40px !important;
+  height: 40px !important;
+  background-color: #ffffff;
+}
+.sub-nav-bar-menu-content ul {
+  list-style: none;
+}
+
+.sub-nav-bar-items {
+  color: $color-07;
+  font-family: "Microsoft PhagsPa", "Regular";
+  font-size: 14px;
+  box-sizing: border-box;
+  padding: 8px 0;
+  border-bottom: 4px solid transparent;
+  transition: ease all 0.2s;
+}
+.sub-nav-bar-items:hover {
+    cursor: pointer;
+    color: $color-2;
+    border-bottom: 4px solid $color-2;
+}
+.sub-nav-bar-items.active {
+  color: $color-2;
+  border-bottom: 4px solid $color-2;
+}

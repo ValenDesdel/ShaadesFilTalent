@@ -1,0 +1,116 @@
+$color-2: #27C1C1;
+$color-6: #C6C6C6;
+$transition: ease all 0.2s;
+
+.nav-bar-footer-news {
+    box-sizing: border-box;
+    position: fixed;
+    bottom: 0;
+    top: auto;
+    z-index: 9999;
+    background-color: #393939;
+    color: $color-6;
+    min-height: 50px;
+    max-height: 50px;
+    height: 50px;
+}
+
+.padding-index {
+    padding: 12px 0;
+}
+.padding-detail {
+    padding: 7px 0;
+}
+.padding-create-new {
+    padding: 2px 0;
+}
+
+.my-links  {
+    font-family: 'Microsoft PhagsPa';
+    text-decoration: none;
+    color: $color-6;
+    transition: $transition;
+    &:hover {
+        color: $color-2;
+        text-decoration: none;
+    }
+}
+
+.sort-amount {
+    width: 25.34px;
+    height: 22.17px;
+}
+.change-elipse {
+    width: 30px;
+    height: 30px;
+}
+.sign-in-img {
+    width: 19.59px;
+    height: 15px;
+}
+.filter-news {
+    width: 35.17px !important;
+    height: 29.53px !important;
+}
+.sign-in-img {
+    margin-right: 5px;
+}
+
+.fa-sign-in-alt {
+    margin-right: 7px;
+}
+
+ .text-action-btn {
+    color: $color-6;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    margin-left: 1rem;
+}
+
+.btn-action-comment,
+.btn-action-like {
+}
+
+.icon-comment-cont,
+.icon-like-cont,
+.icon-share {
+    font-size: 20px;
+
+}
+
+.icon-comment-text,
+.icon-link-text {
+    margin-top: -9px;
+    margin-bottom: 0;
+    font-size: 12px;
+}
+
+.icon-plus-new {
+    font-size: 30px;
+    &:hover, &:active {
+        color: $color-2;
+    }
+}
+.icon-cog-new {
+    font-size: 20px;
+    margin-left: 25px;
+    transition: all 0.25s ease-out;
+    color: $color-6;
+
+    &:hover, &:active {
+        color: $color-2;
+        cursor: pointer;
+    }
+
+    
+}
+@keyframes rotate360 {
+    to { transform: rotate(360deg); }
+}
+
+.icon-cog-new.active {
+    color: $color-2;
+    .fa-cog {
+        animation: 2s rotate360 infinite linear;
+    }
+}

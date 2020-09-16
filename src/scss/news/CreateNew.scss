@@ -1,0 +1,210 @@
+$color-2: #27c1c1;
+$color-7 : #818181;
+.add-head-new-content,
+.add-introduction-new-content {
+  font-family: "Microsoft PhagsPa", "Regular";
+  padding: 0.5rem;
+  background-color: #ffffff !important;
+  border-radius: 2px;
+  min-width: 100% !important;
+  max-width: 100% !important;
+  width: 100% !important;
+}
+.add-head-new-content {
+  min-height: 138px !important;
+  max-height: 138px !important;
+  height: 138px !important;
+  margin-top: 4.5rem;
+}
+.add-introduction-new-content {
+  font-family: "Microsoft PhagsPa", "Regular";
+  min-height: auto !important;
+  max-height: auto !important;
+  height: auto !important;
+  margin-top: 0.3rem;
+}
+
+.add-img-head-new {
+  width: 198px;
+  border: 0.5px solid #c6c6c6;
+  border-radius: 5px;
+  font-size: 30px;
+  color: $color-2;
+}
+.add-title-head-new {
+  padding-left: 0.3rem;
+
+  .add-title-head-new-input {
+    border: none;
+    text-align: center;
+    color: #818181;
+    max-width: 198px;
+    &:active:focus,
+    &:focus {
+      border-bottom: 0.5px solid #c6c6c6;
+    }
+  }
+  ::placeholder {
+    text-align: center;
+    color: #818181;
+    font-size: 14px;
+  }
+}
+
+.add-introduction-new-content {
+  textarea {
+    font-size: 14px;
+    width: 100%;
+    border: none;
+    outline: none;
+    resize: none;
+    border-bottom: 0.5px solid #c6c6c6;
+  }
+  ::placeholder {
+    text-align: center;
+    color: #818181;
+    font-size: 14px;
+  }
+}
+
+.info-circle-intro {
+    cursor: pointer;
+  color: $color-2;
+  position: absolute;
+  left: auto;
+  right: 14px;
+  font-size: 17px;
+  top: 285px;
+}
+
+.config-list-content {
+    background-color: rgba(0,0,0,0.2);
+    position: fixed;
+    top: 0;
+    width: 0%;
+    bottom: auto;
+    overflow: hidden;
+    left: 0;
+    right: 0;
+    height: 100%;
+    z-index: 9999;
+    transition: ease all 0.01s;
+}
+.config-list-side {
+    background-color: #ffffff;
+    height: 100%;
+    width: 0px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: 0;
+    padding: 0.3rem;
+    transition: ease all 0.8s;
+}
+
+.config-list-content.active {
+    width: 100%;
+    overflow: auto;
+}
+.config-list-side.active {
+    width: 207px;
+    overflow: auto;
+}
+
+.config-list-side .ul-parent {
+    margin-top: 3rem;
+    margin-right: 0;
+    margin-bottom: 3rem;
+    margin-left: 0;
+    height: 100%;
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    
+}
+
+.config-list-side ul .parents {
+    
+    color: $color-7;
+    font-family: "Microsoft PhagsPa", "Regular";
+    font-size: 14px;
+    
+    margin-bottom: 14px;
+    transition: all ease-out .05s;
+    
+}
+.content-text-parent {
+    border-bottom: 1px solid #C6C6C6;
+    padding: 6px;
+    cursor: pointer;
+}
+
+.config-list-side ul .parents .icons-extend-children-list {
+    border: none;
+    outline: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    background-color: transparent;
+    transition: all ease-out .9s;
+    
+    .fa-caret-down {
+        font-size: 18px;
+        color: $color-7;
+        transition: all ease-out .05s;
+    }
+
+    &:hover {
+        outline: none;
+        background-color: rgba(0,0,0,0.05);
+
+        .fa-caret-down {
+            transition: all ease-out .5s;
+            color: $color-2;
+        }
+    }
+    &:focus, &:focus:active {
+        outline: none;
+    }
+
+}
+
+.child-ul-div {
+    margin-top: 1rem;
+    margin-right: 0;
+    margin-bottom: -1rem;
+    margin-left: 0;
+    height: 100%;
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    height: 0px;
+    overflow: hidden;
+    transition: all 0.2s ease-out;
+}
+
+.config-list-side ul .parents.active {
+    
+    .content-text-parent {
+        color: $color-2;
+        border-bottom: 1px solid $color-2;
+        .icons-extend-children-list {
+            background-color: rgba(0,0,0,0.05);
+        }
+    }
+    .fa-caret-down {
+        color: $color-2;
+        transform: rotate(180deg);
+    }
+    .child-ul-div {
+        height: auto;
+        overflow: auto;
+    }
+}
+
+
+.values-child {
+    color: $color-2;
+    font-size: 14px;
+}
+
+

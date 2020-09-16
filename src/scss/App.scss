@@ -1,0 +1,12 @@
+@import './_helpers/helper.scss';
+@import './layout/NavBar.scss';
+@import './layout/Content.scss';
+@import './layout/NavBarFooter.scss';
+@import './news/SubNavBar.scss';
+@import './news/CardsAllNews.scss';
+@import './news/UserFollowContent.scss';
+@import './news/Article.scss';
+@import './news/DetailNews.scss';
+@import './news/CreateNew.scss';
+//! this import is removed delete when merge this repor whit the master
+@import 'bootstrap';

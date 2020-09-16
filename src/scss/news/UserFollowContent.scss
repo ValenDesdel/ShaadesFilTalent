@@ -1,0 +1,49 @@
+$color-6: #C6C6C6;
+.user-follow-content {
+    background-color: rgba(0,0,0,0.2);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    bottom: auto;
+    left: 0;
+    right: 0;
+    height: 100%;
+    z-index: 9999;
+    display: block;
+    transition: ease all 0.01s;
+    transform: translateY(-70rem);
+}
+
+.user-follow-list {
+    background-color: #ffffff;
+    position: fixed;
+    bottom: -100px; //50
+    top: auto;
+    left: 0;
+    right: 0;
+    height: 121px;
+    font-size: 14px;
+    padding: 10px 0px;
+    transition: ease all 1s;
+
+}
+
+.user-follow-list-option {
+    margin-bottom: 0;
+    color: #818181;
+    font-family: 'Microsoft PhagsPa', 'Regular';
+    &:hover{
+        color: $color-6;
+    }
+}
+.user-follow-list-option.active {
+    color: $color-6;
+}
+
+.user-follow-content.active {
+    transform: translateY(0rem);
+}
+
+.user-follow-list.active{
+    transform: translateY(-9.4rem);
+}

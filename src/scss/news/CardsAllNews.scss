@@ -1,0 +1,56 @@
+.cards-news {
+    z-index: 9999;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* see notes below */
+    grid-auto-rows: minmax(195px, auto);
+    grid-gap: 6px;
+    }
+
+    .card-news {
+    padding: 0.4rem;
+    background-color: #ffffff !important;
+    border-radius: 4px;
+    min-width: 100%!important;
+    max-width: 100% !important;
+    width: 100% !important;
+    min-height: auto !important;
+    max-height: auto !important;
+    height: auto !important;
+    }
+    .card-news .card-header-news .shaades-icon {
+        min-width: 30px!important;
+        max-width: 30px !important;
+        width: 30px !important;
+        min-height: 30px !important;
+        max-height: 30px !important;
+        height: 30px !important;
+    }
+    .card-news .card-header-news .time-or-date {
+        font-family: "Microsoft PhagsPa", "Regular";
+        margin-bottom: 0;
+        font-size: 12px;
+        color: #B1B1B1;
+    }
+    .card-news .card-content-news {
+        overflow-x: hidden;
+        display: flex;
+        justify-content: center;
+
+    }
+    .card-news .card-content-news .img-card-news{
+        border-radius: 10px;
+        width: 185px !important;
+        height: 138px !important;
+    }
+
+    .card-news .card-footer-news .card-footer-news-text {
+        font-family: "Microsoft PhagsPa", "Regular";
+        font-size: 14px;
+        text-align: center;
+        color: #818181 !important;
+        text-decoration: none !important;
+    }
+    .card-news a {
+        text-decoration: none !important;
+    }
