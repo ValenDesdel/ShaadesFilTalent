@@ -1,6 +1,7 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import Index from '@/views/news/Index';
 import Create from "@/views/news/Create";
+import CreatePublication from "@/views/news/CreatePublication";
 import DetailNew from "@/views/news/DetailNew";
 const routes = [
   {
@@ -17,6 +18,11 @@ const routes = [
     path: "/detail-new",
     name: DetailNew,
     component: DetailNew
+  },
+  {
+    path: "/create-publication",
+    name: CreatePublication,
+    component: CreatePublication
   }
 ];
 

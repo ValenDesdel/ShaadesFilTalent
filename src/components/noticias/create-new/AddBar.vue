@@ -15,13 +15,9 @@
 </template>
 
 <script>
-/**
- * TODO listas por agg en AddIntroductionNew
- * !ajustar tamaño de textarea al contenido
- */
 
 export default {
-    name: 'AddIntroductionNew',
+    name: 'AddBar',
     data() {
 
     },

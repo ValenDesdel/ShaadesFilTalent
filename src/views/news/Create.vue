@@ -9,6 +9,7 @@
 </div>
 </template>
 
+
 <script>
 import Article from "../../components/noticias/Article";
 import SubNavBar from '../../components/noticias/SubNavBar';
