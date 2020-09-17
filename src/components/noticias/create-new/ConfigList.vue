@@ -29,10 +29,8 @@
                 </div>
                 <div class="child-ul-div">
                     <div class="d-flex justify-content-between align-items-center">
-                        <div class="dropdown-item">
-                            <input type="text" class="form-control" id="exampleDropdownFormEmail1" placeholder="Nueva categoría">
-                            <!--TEXT AREA PARA AGREGAR CATEGORÍAS-->
-                        </div>
+                         <!--INPUT NUEVAS CATEGORÍAS-->   
+                        <input type="text" class="input-sd-bar" id="inputNewCategory" placeholder="Nueva categoría">
                     </div>
                 </div>
             </li>
@@ -45,12 +43,14 @@
                 </div>
                 <div class="child-ul-div">
                     <div class="d-flex justify-content-between align-items-center">
-                        <p>Estado</p>
-                        <p class="values-child">Borrador</p>
+                         <!--INPUT NUEVAS CATEGORÍAS-->   
+                        <input type="text" class="input-sd-bar" id="inputNewE" placeholder="Nueva etiqueta">
                     </div>
                     <div class="d-flex justify-content-between align-items-center">
-                        <p>Publicar</p>
-                        <p class="values-child">Inmediatamente</p>
+                        <p class="p-down-input-sd">Etiqueta #1</p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <p class="p-down-input-sd">Etiqueta #2</p>
                     </div>
                 </div>
             </li>
@@ -86,6 +86,9 @@ import {
     mapState,
     mapMutations
 } from 'vuex';
+
+
+
 export default {
     name: 'ConfigList',
     data() {
@@ -122,7 +125,10 @@ export default {
                 this.idSelected = '';
             }
 
-        }
+        },
     }
 }
+
+
+
 </script>

@@ -1,16 +1,16 @@
 <template>
 <div class="add-introduction-new-content my-shadow">
   <div class="dropdown">
-    <button class="drop-btn"><a>°°°</a></button>
+    <button class="drop-btn"><a>•••</a></button>
     <div class="drop-content">
-        <a>Agregar título H2</a>
-        <a>Agregar título H3</a>
-        <a>Agregar título H4</a>
-        <a>Agregar Texto</a>
-        <a>Agregar Imagen</a>
-        <a>Eliminar</a>
+        <a>AGREGAR TITULO H2</a>
+        <a>AGREGAR TITULO H3</a>
+        <a>AGREGAR TITULO H4</a>
+        <a>AGREGAR TEXTO</a>
+        <a>AGREGAR IMAGEN</a>
+        <a>ELIMINAR</a>
+    </div>
   </div>
-</div>
 </div>
 </template>
 

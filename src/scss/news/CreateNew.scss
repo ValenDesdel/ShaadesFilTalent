@@ -207,6 +207,25 @@ $color-7 : #818181;
     font-size: 14px;
 }
 
+.input-sd-bar {
+    width: 100%;
+    border: none;
+    outline: none;
+    resize: none;
+    border-bottom: 0.5px solid #c6c6c6;
+    -webkit-user-select: initial;
+    -khtml-user-select: initial;
+    -moz-user-select: initial;
+    -ms-user-select: initial;
+    user-select: initial;
+}
+
+.p-down-input-sd {
+  color: #818181;
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+
 /*--------------------ADDBAR------------------------*/
 
 .drop-btn {
@@ -215,6 +234,10 @@ $color-7 : #818181;
   font-size: 14px;
   border: none;
   cursor: pointer;
+}
+
+.drop-btn:hover {
+  color: #27c1c1;
 }
 
 .dropdown {
@@ -230,6 +253,7 @@ $color-7 : #818181;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   border-radius: 5px;
+  margin-bottom: 50px;
 }
 
 .drop-content a {
@@ -308,3 +332,9 @@ $color-7 : #818181;
 .new-publication-btn:hover{
   background-color: #7e7e7e;
 }
+
+
+
+/*------------MODAL----------*/
+
+
