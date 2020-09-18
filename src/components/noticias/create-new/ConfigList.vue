@@ -55,7 +55,13 @@
                 </div>
             </li>
             <li class="parents d-flex justify-content-start align-items-center content-text-parent">
-                EXTRACTO
+            <div class="btn-action ">
+                <span @click.prevent="showFilter(); clearInput()" class="my-links">
+                    <span>
+                        MODAL
+                    </span>
+                </span>
+            </div>
             </li>
             <li class="parents d-flex justify-content-between align-items-center content-text-parent">
                 ACEPTAR COMENTARIOS
@@ -105,6 +111,7 @@ export default {
         ...mapState('createNews', ['configListActive'])
     },
     methods: {
+                ...mapMutations('navbarStore', ['showFilter', 'clearInput']),
         ...mapMutations('createNews', ['showConfigListNews']),
         clickOutsideList(e) {
             if (!document.getElementById('configListSide').contains(e.target)) {

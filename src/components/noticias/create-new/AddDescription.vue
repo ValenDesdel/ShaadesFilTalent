@@ -9,7 +9,7 @@
                     <a>ETIQUETAR USUARIO</a>
                 </div>
     </div>
-    <textarea name="introduction" id="descriptionNew" cols="auto" placeholder="Descripción"></textarea>
+    <textarea name="description" id="descriptionNew" cols="auto" placeholder="Descripción"></textarea>
 </div>
 </template>
 

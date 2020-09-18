@@ -5,6 +5,7 @@
     <AddHeadNew />
     <AddIntroductionNew />
     <AddBar />
+    <Modal />
     <ConfigList />
 </div>
 </template>
@@ -17,6 +18,7 @@ import AddHeadNew from '../../components/noticias/create-new/AddHeadNew';
 import AddIntroductionNew from '../../components/noticias/create-new/AddIntroductionNew';
 import AddBar from '../../components/noticias/create-new/AddBar';
 import ConfigList from '../../components/noticias/create-new/ConfigList';
+import Modal from '../../components/noticias/Modal'
 export default {
     name: 'Create',
     components: {
@@ -25,6 +27,7 @@ export default {
         AddHeadNew,
         AddIntroductionNew,
         AddBar,
+Modal,
         ConfigList
     },
     data() {
