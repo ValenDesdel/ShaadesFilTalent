@@ -1,6 +1,7 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import Index from '@/views/news/Index';
 import Create from "@/views/news/Create";
+import CreateBasic from "@/views/news/CreateBasic";
 import CreatePublication from "@/views/news/CreatePublication";
 import DetailNew from "@/views/news/DetailNew";
 const routes = [
@@ -13,6 +14,11 @@ const routes = [
     path: "/create",
     name: Create,
     component: Create,
+  },
+  {
+    path: "/createbasic",
+    name: CreateBasic,
+    component: CreateBasic,
   },
   {
     path: "/detail-new",

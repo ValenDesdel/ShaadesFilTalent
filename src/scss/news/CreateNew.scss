@@ -1,6 +1,7 @@
 $color-2: #27c1c1;
 $color-7 : #818181;
 .add-head-new-content,
+.add-head-new-content-basic,
 .add-introduction-new-content {
   font-family: "Microsoft PhagsPa", "Regular";
   padding: 0.5rem;
@@ -15,6 +16,12 @@ $color-7 : #818181;
   max-height: 138px !important;
   height: 138px !important;
   margin-top: 4.5rem;
+}
+.add-head-new-content-basic {
+  min-height: 138px !important;
+  max-height: 138px !important;
+  height: 138px !important;
+  margin-top: 2rem;
 }
 .add-introduction-new-content {
   font-family: "Microsoft PhagsPa", "Regular";
@@ -226,6 +233,11 @@ $color-7 : #818181;
   margin-bottom: 2px;
 }
 
+.icon-newP {
+  color: #15a108;
+  font-size: 30px;
+}
+
 /*--------------------ADDBAR------------------------*/
 
 .drop-btn {
@@ -278,7 +290,7 @@ $color-7 : #818181;
 .new-basic{
   background-color: rgb(255, 255, 255);
   padding: 5px 5px;
-  margin-top: 5%;
+  margin-top: 4.5rem;
   margin-left: 25%;
   margin-right: 25%;
   text-align: center;

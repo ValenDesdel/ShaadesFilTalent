@@ -3,7 +3,9 @@
         <div class="new-basic">
             <p>CREAR PUBLICACIÓN</p>
             <p class="p-second">BÁSICA</p>
-            <button class="new-publication-btn">+</button>
+            <div class="icon-newP">
+                <font-awesome-icon :icon="plusCircle" />
+            </div>
         </div>
         <div>
             <p class="p-down">Crea una publicación básica y haz que te conozcan.</p>
@@ -12,7 +14,9 @@
         <div class="new-basic">
             <p>CREAR PUBLICACIÓN</p>
             <p class="p-second">AVANZADA</p>
-            <button class="new-publication-btn">+</button>
+            <div class="icon-newP">
+                <font-awesome-icon :icon="plusCircle" />
+            </div>
         </div>
         <div>
             <p class="p-down">Crea una publicación optimizada para un mejor posicionamiento, ideal para personas con conocimientos en SEO.</p>
@@ -22,13 +26,23 @@
 
 <script>
 
+import {
+    faPlusCircle
+} from '@fortawesome/free-solid-svg-icons';
+import {
+    FontAwesomeIcon
+} from '@fortawesome/vue-fontawesome';
 export default {
-    name: 'NewPublication',
+    name: 'AddHeadNew',
     data() {
-
+        return {
+            plusCircle: faPlusCircle,
+        }
     },
     components: {
+        FontAwesomeIcon
     },
+
 }
 
 </script>
