@@ -4,7 +4,6 @@
     <Article topNav="top-two" />
     <AddHeadNew />
     <AddIntroductionNew />
-    <AddDescription />
     <AddBar />
     <ConfigList />
 </div>
@@ -17,7 +16,6 @@ import SubNavBar from '../../components/noticias/SubNavBar';
 import AddHeadNew from '../../components/noticias/create-new/AddHeadNew';
 import AddIntroductionNew from '../../components/noticias/create-new/AddIntroductionNew';
 import AddBar from '../../components/noticias/create-new/AddBar';
-import AddDescription from '../../components/noticias/create-new/AddDescription';
 import ConfigList from '../../components/noticias/create-new/ConfigList';
 export default {
     name: 'Create',
@@ -27,7 +25,6 @@ export default {
         AddHeadNew,
         AddIntroductionNew,
         AddBar,
-        AddDescription,
         ConfigList
     },
     data() {

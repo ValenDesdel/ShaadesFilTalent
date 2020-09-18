@@ -246,6 +246,7 @@ $color-7 : #818181;
   font-size: 14px;
   border: none;
   cursor: pointer;
+  margin-left: 22rem;
 }
 
 .drop-btn:hover {
@@ -255,6 +256,7 @@ $color-7 : #818181;
 .dropdown {
   position: relative;
   display: inline-block;
+
 }
 
 .drop-content {
@@ -266,6 +268,7 @@ $color-7 : #818181;
   z-index: 1;
   border-radius: 5px;
   margin-bottom: 50px;
+  margin-left: 15rem;
 }
 
 .drop-content a {

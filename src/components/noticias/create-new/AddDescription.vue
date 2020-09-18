@@ -1,7 +1,6 @@
 <template>
 <div class="add-introduction-new-content my-shadow">
-    <textarea name="introduction" id="descriptionNew" cols="auto" placeholder="Descripción"></textarea>
-       <div class="dropdown">
+    <div class="dropdown">
             <button class="drop-btn">•••</button>
                 <div class="drop-content">
                     <a>AGREGAR UBICACIÓN</a>
@@ -9,7 +8,8 @@
                     <a>AGREGAR ETIQUETAS</a>
                     <a>ETIQUETAR USUARIO</a>
                 </div>
-        </div>
+    </div>
+    <textarea name="introduction" id="descriptionNew" cols="auto" placeholder="Descripción"></textarea>
 </div>
 </template>
 
