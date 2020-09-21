@@ -4,12 +4,6 @@
         <div class="add-introduction-new-content my-shadow">
             <textarea class="extracto-modal" name="extracto" id="extractoNew" cols="auto" placeholder="Escribe tu extracto aquí"></textarea>
         </div>
-        <div class="col-12 d-flex justify-content-center align-items-center" @click.prevent="showFilter(); clearInput()">
-            <p class="user-follow-list-option-2">HABLA</p>
-        </div>
-        <div class="col-12 d-flex justify-content-center align-items-center" @click.prevent="showFilter(); clearInput()">
-            <p class="user-follow-list-option-2">HABLA</p>
-        </div>
     </div>
 </div>
 </template>

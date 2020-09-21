@@ -21,18 +21,17 @@
                     </div>
                 </div>
             </li>
-            <li @click.prevent="showChildList('parentB')" class="parents" id='parentB'>
+            <li @click="showChildList('parentB')"  class="parents" id='parentB'>
                 <div class="d-flex justify-content-between align-items-center content-text-parent">
                     CATEGORÍAS
                     <button class="icons-extend-children-list d-flex justify-content-center align-items-center">
                         <font-awesome-icon :icon="myIcon" />
                     </button>
                 </div>
-                <form class="d-flex justify-content-between align-items-center">
-                    <!--INPUT NUEVAS CATEGORÍAS-->   
-                    <textarea type="text" class="input-sd-bar" id="TextANewCategory" placeholder="Nueva categoría"></textarea>
-                </form>
                 <div class="child-ul-div">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <p class="p-down-input-sd">Agregar nueva categoría</p>
+                    </div>
                     <div class="d-flex justify-content-between align-items-center">
                         <p class="p-down-input-sd">Categoría #1</p>
                     </div>
@@ -40,6 +39,10 @@
                         <p class="p-down-input-sd">Categoría #2</p>
                     </div>
                 </div>
+                <form class="d-flex justify-content-between align-items-center">
+                    <!--INPUT NUEVAS CATEGORÍAS-->   
+                    <textarea type="text" class="input-sd-bar" id="TextANewCategory" placeholder="Nueva categoría"></textarea>
+                </form>
             </li>
             <li @click.prevent="showChildList('parentC')" class="parents" id='parentC'>
                 <div class="d-flex justify-content-between align-items-center content-text-parent">
@@ -142,7 +145,7 @@ export default {
             }
 
         },
-    }
+    },
 }
 
 
