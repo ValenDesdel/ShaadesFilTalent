@@ -1,4 +1,5 @@
 <template>
+<div>
 <div class="config-list-content" @click.prevent="clickOutsideList" v-bind:class="{active: configListActive}">
     <div class="config-list-side" id="configListSide" v-bind:class="{active: configListActive}">
         <ul class="ul-parent">
@@ -27,10 +28,16 @@
                         <font-awesome-icon :icon="myIcon" />
                     </button>
                 </div>
+                <form class="d-flex justify-content-between align-items-center">
+                    <!--INPUT NUEVAS CATEGORÍAS-->   
+                    <textarea type="text" class="input-sd-bar" id="TextANewCategory" placeholder="Nueva categoría"></textarea>
+                </form>
                 <div class="child-ul-div">
                     <div class="d-flex justify-content-between align-items-center">
-                         <!--INPUT NUEVAS CATEGORÍAS-->   
-                        <input type="text" class="input-sd-bar" id="inputNewCategory" placeholder="Nueva categoría">
+                        <p class="p-down-input-sd">Categoría #1</p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <p class="p-down-input-sd">Categoría #2</p>
                     </div>
                 </div>
             </li>
@@ -41,16 +48,16 @@
                         <font-awesome-icon :icon="myIcon" />
                     </button>
                 </div>
+                <form class="d-flex justify-content-between align-items-center">
+                    <!--INPUT NUEVAS CATEGORÍAS-->   
+                    <textarea type="text" class="input-sd-bar" id="TextANewEtiqueta" placeholder="Nueva etiqueta" required="required" ></textarea>
+                </form>
                 <div class="child-ul-div">
                     <div class="d-flex justify-content-between align-items-center">
-                         <!--INPUT NUEVAS CATEGORÍAS-->   
-                        <input type="text" class="input-sd-bar" id="inputNewE" placeholder="Nueva etiqueta">
+                        <p class="p-down-input-sd">Categoría #1</p>
                     </div>
                     <div class="d-flex justify-content-between align-items-center">
-                        <p class="p-down-input-sd">Etiqueta #1</p>
-                    </div>
-                    <div class="d-flex justify-content-between align-items-center">
-                        <p class="p-down-input-sd">Etiqueta #2</p>
+                        <p class="p-down-input-sd">Categoría #2</p>
                     </div>
                 </div>
             </li>
@@ -58,7 +65,7 @@
             <div class="btn-action ">
                 <span @click.prevent="showFilter(); clearInput()" class="my-links">
                     <span>
-                        MODAL
+                        EXTRACTO
                     </span>
                 </span>
             </div>
@@ -79,7 +86,9 @@
         </ul>
     </div>
 </div>
+</div>
 </template>
+
 
 <script>
 import {
