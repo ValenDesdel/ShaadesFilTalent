@@ -227,10 +227,20 @@ $color-7 : #818181;
     user-select: initial;
 }
 
+.text-area-div{
+  display: none;
+}
+
+.text-area-div-e{
+  display: none;
+}
+
 .p-down-input-sd {
+  margin-top: -1px;
   color: #818181;
   font-size: 14px;
   margin-bottom: 2px;
+  border: none;
 }
 
 .icon-newP {

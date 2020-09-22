@@ -30,7 +30,7 @@
                 </div>
                 <div class="child-ul-div">
                     <div class="d-flex justify-content-between align-items-center">
-                        <p class="p-down-input-sd">Agregar nueva categoría</p>
+                        <input class="p-down-input-sd" type="text" value="Agregar categoría" @click="mostrarNewCategory();">
                     </div>
                     <div class="d-flex justify-content-between align-items-center">
                         <p class="p-down-input-sd">Categoría #1</p>
@@ -39,10 +39,13 @@
                         <p class="p-down-input-sd">Categoría #2</p>
                     </div>
                 </div>
-                <form class="d-flex justify-content-between align-items-center">
-                    <!--INPUT NUEVAS CATEGORÍAS-->   
-                    <textarea type="text" class="input-sd-bar" id="TextANewCategory" placeholder="Nueva categoría"></textarea>
-                </form>
+                <div class="text-area-div" id="text-area-div-id">
+                    <form class="d-flex justify-content-between align-items-center">
+                        <!--INPUT NUEVAS CATEGORÍAS-->   
+                        <textarea type="text" class="input-sd-bar" placeholder="Nueva categoría"></textarea>
+                    </form>
+                    <button class="p-down-input-sd" type="text" @click="ocultarNewCategory();">Cerrar</button>
+                </div>
             </li>
             <li @click.prevent="showChildList('parentC')" class="parents" id='parentC'>
                 <div class="d-flex justify-content-between align-items-center content-text-parent">
@@ -51,17 +54,23 @@
                         <font-awesome-icon :icon="myIcon" />
                     </button>
                 </div>
-                <form class="d-flex justify-content-between align-items-center">
-                    <!--INPUT NUEVAS CATEGORÍAS-->   
-                    <textarea type="text" class="input-sd-bar" id="TextANewEtiqueta" placeholder="Nueva etiqueta" required="required" ></textarea>
-                </form>
                 <div class="child-ul-div">
                     <div class="d-flex justify-content-between align-items-center">
-                        <p class="p-down-input-sd">Categoría #1</p>
+                        <input class="p-down-input-sd" type="text" value="Agregar etiqueta" @click="mostrarNewEti();">
                     </div>
                     <div class="d-flex justify-content-between align-items-center">
-                        <p class="p-down-input-sd">Categoría #2</p>
+                        <p class="p-down-input-sd">Etiqueta #1</p>
                     </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <p class="p-down-input-sd">Etiqueta #2</p>
+                    </div>
+                </div>
+                <div class="text-area-div-e" id="text-area-div-id-e">
+                    <form class="d-flex justify-content-between align-items-center">
+                            <!--INPUT NUEVAS ETIQUETA-->   
+                        <textarea type="text" class="input-sd-bar" placeholder="Nueva etiqueta"></textarea>
+                    </form>
+                    <button class="p-down-input-sd" type="text" @click="ocultarNewEti();">Cerrar</button>
                 </div>
             </li>
             <li class="parents d-flex justify-content-start align-items-center content-text-parent">
@@ -122,8 +131,9 @@ export default {
     computed: {
         ...mapState('createNews', ['configListActive'])
     },
+
     methods: {
-                ...mapMutations('navbarStore', ['showFilter', 'clearInput']),
+        ...mapMutations('navbarStore', ['showFilter', 'clearInput']),
         ...mapMutations('createNews', ['showConfigListNews']),
         clickOutsideList(e) {
             if (!document.getElementById('configListSide').contains(e.target)) {
@@ -144,6 +154,18 @@ export default {
                 this.idSelected = '';
             }
 
+        },
+        mostrarNewCategory(){
+            document.getElementById('text-area-div-id').style.display = 'block';
+        },
+        ocultarNewCategory(){
+            document.getElementById('text-area-div-id').style.display = 'none';
+        },
+        mostrarNewEti(){
+            document.getElementById('text-area-div-id-e').style.display = 'block';
+        },
+        ocultarNewEti(){
+            document.getElementById('text-area-div-id-e').style.display = 'none';
         },
     },
 }
